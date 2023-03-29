@@ -1962,6 +1962,16 @@
     };
     version = "0.3.5";
   };
+  prettier_print = {
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1ybgks9862zmlx71zd4j20ky86fsrp6j6m0az4hzzb1zyaskha57";
+      type = "gem";
+    };
+    version = "1.2.1";
+  };
   proxifier = {
     groups = ["default"];
     platforms = [];
@@ -2213,6 +2223,17 @@
     };
     version = "1.15.2";
   };
+  ruby-lsp = {
+    dependencies = ["language_server-protocol" "sorbet-runtime" "syntax_tree"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "135y2sp6l5d62rmgkm0nd414rgd253hz3y0kkignb6cqlvhp19nn";
+      type = "gem";
+    };
+    version = "0.4.2";
+  };
   ruby-progressbar = {
     groups = ["default"];
     platforms = [];
@@ -2317,6 +2338,16 @@
     };
     version = "4.0.4";
   };
+  sorbet-runtime = {
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "1rvmawl92vd4awh3sy38ddy9brn45lpr55fn5bj4793hf37rx0p3";
+      type = "gem";
+    };
+    version = "0.5.10736";
+  };
   sslshake = {
     groups = ["default"];
     platforms = [];
@@ -2358,6 +2389,17 @@
       type = "gem";
     };
     version = "0.2.0";
+  };
+  syntax_tree = {
+    dependencies = ["prettier_print"];
+    groups = ["default"];
+    platforms = [];
+    source = {
+      remotes = ["https://rubygems.org"];
+      sha256 = "162m5xhbiq315bncp49ziddws537dv09pqsgrzsrmhhsymhgy0zb";
+      type = "gem";
+    };
+    version = "6.1.1";
   };
   syslog-logger = {
     groups = ["default"];
